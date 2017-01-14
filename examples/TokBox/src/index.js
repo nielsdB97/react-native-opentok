@@ -34,13 +34,7 @@ class Basic extends Component {
         <SubscriberView
           apiKey={config.OPENTOK_API_KEY}
           sessionId={config.SESSION_ID}
-          token={config.SUBSCRIBER_TOKEN || config.PUBLISHER_TOKEN}
-          style={{ width: 300, height: 200 }}
-        />
-        <PublisherView
-          apiKey={config.OPENTOK_API_KEY}
-          sessionId={config.SESSION_ID}
-          token={config.PUBLISHER_TOKEN || config.SUBSCRIBER_TOKEN}
+          token={config.TOKEN}
           style={{ width: 300, height: 200 }}
         />
       </View>
