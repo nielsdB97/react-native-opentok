@@ -14,12 +14,11 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/callstack/react-native-video"
 
   s.license      = "MIT"
-  s.platform     = :ios, "7.0"
+  s.platform     = :ios, "8.0"
 
-  s.source       = { :git => "https://github.com/callstack/react-native-opentok.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/EstebanFuentealba/react-native-opentok.git", :tag => "#{s.version}" }
 
   s.source_files  = "*.{h,m}"
 
-  s.dependency "React"
   s.dependency "OpenTok"
 end

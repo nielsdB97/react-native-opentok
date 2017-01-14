@@ -12,7 +12,7 @@ import {
   View,
   StyleSheet,
 } from 'react-native';
-import { PublisherView,SubscriberView, Session } from 'react-native-opentok';
+import { PublisherView, SubscriberView, Session } from 'react-native-opentok';
 import config from './variables';
 
 

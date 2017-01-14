@@ -1,0 +1,4 @@
+platform :ios, '8.0'
+target 'TokBox' do
+  pod 'react-native-opentok',  path: '../../../'
+end

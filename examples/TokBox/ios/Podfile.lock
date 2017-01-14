@@ -1,0 +1,19 @@
+PODS:
+  - OpenTok (2.9.2)
+  - react-native-opentok (0.0.1):
+    - OpenTok
+
+DEPENDENCIES:
+  - react-native-opentok (from `../../../`)
+
+EXTERNAL SOURCES:
+  react-native-opentok:
+    :path: ../../../
+
+SPEC CHECKSUMS:
+  OpenTok: aa00296d8c48972cbbd18e2e3954955ea6fb9501
+  react-native-opentok: 910743bcdace047822f440a9b3a7035dd5400069
+
+PODFILE CHECKSUM: 33bb3fef6189abba4090fc5e0cc449e1a49f2fca
+
+COCOAPODS: 1.1.1

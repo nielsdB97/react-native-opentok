@@ -7,6 +7,7 @@
  */
 
 #import "React/RCTBridgeModule.h"
+#import "React/RCTEventDispatcher.h"
 #import <OpenTok/OpenTok.h>
 
 @interface RCTOpenTokSessionManager : NSObject <RCTBridgeModule, OTSessionDelegate>

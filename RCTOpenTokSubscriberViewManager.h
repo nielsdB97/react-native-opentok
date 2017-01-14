@@ -7,7 +7,7 @@
  */
 
 #import "React/RCTViewManager.h"
-#import "React/RCTOpenTokSubscriberView.h"
+#import "RCTOpenTokSubscriberView.h"
 
 @interface RCTOpenTokSubscriberViewManager : RCTViewManager
 

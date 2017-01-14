@@ -7,7 +7,7 @@
  */
 
 @import UIKit;
-#import "React/RCTOpenTokSubscriberView.h"
+#import "RCTOpenTokSubscriberView.h"
 #import "React/RCTEventDispatcher.h"
 #import "React/RCTUtils.h"
 #import <OpenTok/OpenTok.h>
