@@ -6,8 +6,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-#import "RCTOpenTokSubscriberViewManager.h"
-#import "RCTOpenTokSubscriberView.h"
+#import "React/RCTOpenTokSubscriberViewManager.h"
+#import "React/RCTOpenTokSubscriberView.h"
 
 @implementation RCTOpenTokSubscriberViewManager
 

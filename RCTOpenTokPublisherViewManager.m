@@ -6,9 +6,9 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-#import "RCTOpenTokPublisherViewManager.h"
-#import "RCTOpenTokPublisherView.h"
-#import "RCTComponent.h"
+#import "React/RCTOpenTokPublisherViewManager.h"
+#import "React/RCTOpenTokPublisherView.h"
+#import "React/RCTComponent.h"
 
 @implementation RCTOpenTokPublisherViewManager
 

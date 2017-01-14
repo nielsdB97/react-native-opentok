@@ -6,8 +6,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-#import "RCTViewManager.h"
-#import "RCTOpenTokPublisherView.h"
+#import "React/RCTViewManager.h"
+#import "React/RCTOpenTokPublisherView.h"
 
 @interface RCTOpenTokPublisherViewManager : RCTViewManager
 

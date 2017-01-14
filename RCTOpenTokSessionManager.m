@@ -6,8 +6,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-#import "RCTOpenTokSessionManager.h"
-#import "RCTEventDispatcher.h"
+#import "React/RCTOpenTokSessionManager.h"
+#import "React/RCTEventDispatcher.h"
 #import <OpenTok/OpenTok.h>
 
 @implementation RCTOpenTokSessionManager {

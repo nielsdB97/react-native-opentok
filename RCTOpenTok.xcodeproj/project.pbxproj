@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AD8A566F1D3FAF5F00683126 /* RCTOpenTok.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8A566E1D3FAF5F00683126 /* RCTOpenTok.m */; };
+		D0807C9E1E29CC2000A0F28B /* RCTOpenTokPublisherView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0807C951E29CC2000A0F28B /* RCTOpenTokPublisherView.m */; };
+		D0807C9F1E29CC2000A0F28B /* RCTOpenTokPublisherViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D0807C971E29CC2000A0F28B /* RCTOpenTokPublisherViewManager.m */; };
+		D0807CA01E29CC2000A0F28B /* RCTOpenTokSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D0807C991E29CC2000A0F28B /* RCTOpenTokSessionManager.m */; };
+		D0807CA11E29CC2000A0F28B /* RCTOpenTokSubscriberView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0807C9B1E29CC2000A0F28B /* RCTOpenTokSubscriberView.m */; };
+		D0807CA21E29CC2000A0F28B /* RCTOpenTokSubscriberViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D0807C9D1E29CC2000A0F28B /* RCTOpenTokSubscriberViewManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,8 +28,16 @@
 
 /* Begin PBXFileReference section */
 		AD8A56611D3FAF1400683126 /* libRCTOpenTok.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTOpenTok.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD8A566D1D3FAF5F00683126 /* RCTOpenTok.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTOpenTok.h; sourceTree = "<group>"; };
-		AD8A566E1D3FAF5F00683126 /* RCTOpenTok.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTOpenTok.m; sourceTree = "<group>"; };
+		D0807C941E29CC2000A0F28B /* RCTOpenTokPublisherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTOpenTokPublisherView.h; sourceTree = "<group>"; };
+		D0807C951E29CC2000A0F28B /* RCTOpenTokPublisherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTOpenTokPublisherView.m; sourceTree = "<group>"; };
+		D0807C961E29CC2000A0F28B /* RCTOpenTokPublisherViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTOpenTokPublisherViewManager.h; sourceTree = "<group>"; };
+		D0807C971E29CC2000A0F28B /* RCTOpenTokPublisherViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTOpenTokPublisherViewManager.m; sourceTree = "<group>"; };
+		D0807C981E29CC2000A0F28B /* RCTOpenTokSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTOpenTokSessionManager.h; sourceTree = "<group>"; };
+		D0807C991E29CC2000A0F28B /* RCTOpenTokSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTOpenTokSessionManager.m; sourceTree = "<group>"; };
+		D0807C9A1E29CC2000A0F28B /* RCTOpenTokSubscriberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTOpenTokSubscriberView.h; sourceTree = "<group>"; };
+		D0807C9B1E29CC2000A0F28B /* RCTOpenTokSubscriberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTOpenTokSubscriberView.m; sourceTree = "<group>"; };
+		D0807C9C1E29CC2000A0F28B /* RCTOpenTokSubscriberViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTOpenTokSubscriberViewManager.h; sourceTree = "<group>"; };
+		D0807C9D1E29CC2000A0F28B /* RCTOpenTokSubscriberViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTOpenTokSubscriberViewManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,8 +54,16 @@
 		AD8A56581D3FAF1400683126 = {
 			isa = PBXGroup;
 			children = (
-				AD8A566D1D3FAF5F00683126 /* RCTOpenTok.h */,
-				AD8A566E1D3FAF5F00683126 /* RCTOpenTok.m */,
+				D0807C941E29CC2000A0F28B /* RCTOpenTokPublisherView.h */,
+				D0807C951E29CC2000A0F28B /* RCTOpenTokPublisherView.m */,
+				D0807C961E29CC2000A0F28B /* RCTOpenTokPublisherViewManager.h */,
+				D0807C971E29CC2000A0F28B /* RCTOpenTokPublisherViewManager.m */,
+				D0807C981E29CC2000A0F28B /* RCTOpenTokSessionManager.h */,
+				D0807C991E29CC2000A0F28B /* RCTOpenTokSessionManager.m */,
+				D0807C9A1E29CC2000A0F28B /* RCTOpenTokSubscriberView.h */,
+				D0807C9B1E29CC2000A0F28B /* RCTOpenTokSubscriberView.m */,
+				D0807C9C1E29CC2000A0F28B /* RCTOpenTokSubscriberViewManager.h */,
+				D0807C9D1E29CC2000A0F28B /* RCTOpenTokSubscriberViewManager.m */,
 				AD8A56621D3FAF1400683126 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,7 +102,7 @@
 		AD8A56591D3FAF1400683126 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = callstack;
 				TargetAttributes = {
 					AD8A56601D3FAF1400683126 = {
@@ -112,7 +132,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD8A566F1D3FAF5F00683126 /* RCTOpenTok.m in Sources */,
+				D0807C9F1E29CC2000A0F28B /* RCTOpenTokPublisherViewManager.m in Sources */,
+				D0807CA11E29CC2000A0F28B /* RCTOpenTokSubscriberView.m in Sources */,
+				D0807CA01E29CC2000A0F28B /* RCTOpenTokSessionManager.m in Sources */,
+				D0807C9E1E29CC2000A0F28B /* RCTOpenTokPublisherView.m in Sources */,
+				D0807CA21E29CC2000A0F28B /* RCTOpenTokSubscriberViewManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,8 +157,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -156,7 +182,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -177,8 +203,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -194,7 +222,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
