@@ -11,6 +11,7 @@ import {
   AppRegistry,
   View,
   StyleSheet,
+  Platform
 } from 'react-native';
 import { PublisherView, SubscriberView, Session } from 'react-native-opentok';
 import config from './variables';
@@ -29,16 +30,35 @@ class Basic extends Component {
   }
 
   render() {
-    return (
-      <View style={styles.container}>
-        <SubscriberView
-          apiKey={config.OPENTOK_API_KEY}
-          sessionId={config.SESSION_ID}
-          token={config.TOKEN}
-          style={{ width: 300, height: 200 }}
-        />
-      </View>
-    );
+    if(Platform.OS == 'ios') {
+      return (
+        <View style={styles.container}>
+          <SubscriberView
+            apiKey={config.OPENTOK_API_KEY}
+            sessionId={config.SESSION_ID}
+            token={config.TOKEN}
+            style={{ width: 300, height: 200 }}
+          />
+        </View>
+      );
+    } else {
+      return (
+        <View style={styles.container}>
+          <SubscriberView
+            apiKey={config.OPENTOK_API_KEY}
+            sessionId={config.SESSION_ID}
+            token={config.TOKEN}
+            style={{ width: 300, height: 200 }}
+          />
+          <PublisherView
+            apiKey={config.OPENTOK_API_KEY}
+            sessionId={config.SESSION_ID}
+            token={config.TOKEN}
+            style={{ width: 300, height: 200 }}
+          />
+        </View>
+      );
+    }
   }
 }
 
