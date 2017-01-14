@@ -10,28 +10,17 @@ import React, { Component } from 'react';
 import {
   AppRegistry,
   View,
-  Text,
   StyleSheet,
-  Switch,
 } from 'react-native';
-import { PublisherView, SubscriberView, Session } from 'react-native-opentok';
-import { OPENTOK_API_KEY, SESSION_ID, PUBLISHER_TOKEN, SUBSCRIBER_TOKEN } from './variables';
+import { PublisherView,SubscriberView, Session } from 'react-native-opentok';
+import config from './variables';
 
-export default function Subscriber() {
-  return (
-    <SubscriberView
-      apiKey={OPENTOK_API_KEY}
-      sessionId={OPENTOK_SESSION_ID}
-      token={OPENTOK_SUBSCRIBER_TOKEN}
-      style={{ width: 300, height: 200 }}
-    />
-  );
-}
+
 
 class Basic extends Component {
 
   componentWillMount() {
-    Session.connect(OPENTOK_API_KEY, SESSION_ID, PUBLISHER_TOKEN || SUBSCRIBER_TOKEN);
+    Session.connect(config.OPENTOK_API_KEY, config.SESSION_ID, config.PUBLISHER_TOKEN || config.SUBSCRIBER_TOKEN);
     Session.onMessageRecieved((e) => console.log(e));
   }
 
@@ -40,37 +29,20 @@ class Basic extends Component {
   }
 
   render() {
-    const { isPublisher } = this.state;
     return (
       <View style={styles.container}>
-        <Text onPress={() => { Session.sendMessage('test'); }}>
-          {isPublisher ? 'Publisher' : 'Subscriber'}
-        </Text>
-        {
-          isPublisher ? (
-            <PublisherView
-              apiKey={OPENTOK_API_KEY}
-              sessionId={SESSION_ID}
-              token={PUBLISHER_TOKEN}
-              style={{ width: 300, height: 200 }}
-            />
-          ) : (
-            <SubscriberView
-              apiKey={OPENTOK_API_KEY}
-              sessionId={SESSION_ID}
-              token={SUBSCRIBER_TOKEN}
-              style={{ width: 300, height: 200 }}
-            />
-          )
-        }
-        <Text>
-          Is Publisher:
-          <Switch
-            value={isPublisher}
-            onChange={() => this.setState({ isPublisher: !isPublisher })}
-          />
-        </Text>
-
+        <SubscriberView
+          apiKey="45740142"
+          sessionId="1_MX40NTc0MDE0Mn5-MTQ4NDM1NjU4NzQwOX5TZnhMaWgvSjV3TUVHUGxBOFpzY0phN0x-UH4"
+          token="T1==cGFydG5lcl9pZD00NTc0MDE0MiZzaWc9NjkxNjcyMjExZjY1MDFjNzg0MWZjYjhkZjI3NmVlNTBhMWQxMWM2NzpzZXNzaW9uX2lkPTFfTVg0ME5UYzBNREUwTW41LU1UUTRORE0xTmpVNE56UXdPWDVUWm5oTWFXZ3ZTalYzVFVWSFVHeEJPRnB6WTBwaE4weC1VSDQmY3JlYXRlX3RpbWU9MTQ4NDM1NjU4NyZub25jZT01NDMzNDUmcm9sZT1QVUJMSVNIRVI="
+          style={{ width: 300, height: 200 }}
+        />
+        <PublisherView
+          apiKey="45740142"
+          sessionId="1_MX40NTc0MDE0Mn5-MTQ4NDM1NjU4NzQwOX5TZnhMaWgvSjV3TUVHUGxBOFpzY0phN0x-UH4"
+          token="T1==cGFydG5lcl9pZD00NTc0MDE0MiZzaWc9NjkxNjcyMjExZjY1MDFjNzg0MWZjYjhkZjI3NmVlNTBhMWQxMWM2NzpzZXNzaW9uX2lkPTFfTVg0ME5UYzBNREUwTW41LU1UUTRORE0xTmpVNE56UXdPWDVUWm5oTWFXZ3ZTalYzVFVWSFVHeEJPRnB6WTBwaE4weC1VSDQmY3JlYXRlX3RpbWU9MTQ4NDM1NjU4NyZub25jZT01NDMzNDUmcm9sZT1QVUJMSVNIRVI="
+          style={{ width: 300, height: 200 }}
+        />
       </View>
     );
   }
