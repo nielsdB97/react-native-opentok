@@ -11,54 +11,59 @@ import {
   AppRegistry,
   View,
   StyleSheet,
-  Platform
+  Platform,
+  Text, Switch,
 } from 'react-native';
-import { PublisherView, SubscriberView, Session } from 'react-native-opentok';
+import {  PublisherView, SubscriberView, Session } from 'react-native-opentok';
 import config from './variables';
 
 
 
 class Basic extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      isPublisher: false
+    };
+  }
   componentWillMount() {
-    Session.connect(config.OPENTOK_API_KEY, config.SESSION_ID, config.PUBLISHER_TOKEN || config.SUBSCRIBER_TOKEN);
+    Session.connect(config.OPENTOK_API_KEY, config.SESSION_ID, config.TOKEN);
     Session.onMessageRecieved((e) => console.log(e));
   }
-
-  state = {
-    isPublisher: true,
-  }
-
   render() {
-    if(Platform.OS == 'ios') {
-      return (
-        <View style={styles.container}>
-          <SubscriberView
-            apiKey={config.OPENTOK_API_KEY}
-            sessionId={config.SESSION_ID}
-            token={config.TOKEN}
-            style={{ width: 300, height: 200 }}
-          />
+    const { isPublisher } = this.state;
+    return (
+      <View style={styles.container}>
+        <Text onPress={() => { Session.sendMessage('test'); }}>
+          {isPublisher ? 'Publisher' : 'Subscriber'}
+        </Text>
+        {
+          isPublisher ? (
+            <PublisherView
+              apiKey={config.OPENTOK_API_KEY}
+              sessionId={config.SESSION_ID}
+              token={config.TOKEN}
+              style={{ width: 300, height: 200 }}
+            />
+          ) : (
+            <SubscriberView
+              apiKey={config.OPENTOK_API_KEY}
+              sessionId={config.SESSION_ID}
+              token={config.TOKEN}
+              style={{ width: 300, height: 200 }}
+            />
+          )
+        }
+        <View>
+          <Text>Is Publisher:</Text>
+          <Switch
+              value={isPublisher}
+              onValueChange={() => this.setState({ isPublisher: !isPublisher })}
+            />
         </View>
-      );
-    } else {
-      return (
-        <View style={styles.container}>
-          <SubscriberView
-            apiKey={config.OPENTOK_API_KEY}
-            sessionId={config.SESSION_ID}
-            token={config.TOKEN}
-            style={{ width: 300, height: 200 }}
-          />
-          <PublisherView
-            apiKey={config.OPENTOK_API_KEY}
-            sessionId={config.SESSION_ID}
-            token={config.TOKEN}
-            style={{ width: 300, height: 200 }}
-          />
-        </View>
-      );
-    }
+      </View>
+    );
   }
 }
 
