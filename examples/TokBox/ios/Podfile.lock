@@ -2,18 +2,42 @@ PODS:
   - OpenTok (2.9.2)
   - react-native-opentok (0.0.1):
     - OpenTok
+  - React/Core (0.40.0):
+    - React/cxxreact
+    - React/yoga
+  - React/cxxreact (0.40.0):
+    - React/jschelpers
+  - React/jschelpers (0.40.0)
+  - React/RCTImage (0.40.0):
+    - React/Core
+    - React/RCTNetwork
+  - React/RCTNetwork (0.40.0):
+    - React/Core
+  - React/RCTText (0.40.0):
+    - React/Core
+  - React/RCTWebSocket (0.40.0):
+    - React/Core
+  - React/yoga (0.40.0)
 
 DEPENDENCIES:
   - react-native-opentok (from `../../../`)
+  - React/Core (from `../node_modules/react-native`)
+  - React/RCTImage (from `../node_modules/react-native`)
+  - React/RCTNetwork (from `../node_modules/react-native`)
+  - React/RCTText (from `../node_modules/react-native`)
+  - React/RCTWebSocket (from `../node_modules/react-native`)
 
 EXTERNAL SOURCES:
+  React:
+    :path: ../node_modules/react-native
   react-native-opentok:
     :path: ../../../
 
 SPEC CHECKSUMS:
   OpenTok: aa00296d8c48972cbbd18e2e3954955ea6fb9501
+  React: 6dfb2f72edb1d74a800127ae157af038646673ce
   react-native-opentok: 910743bcdace047822f440a9b3a7035dd5400069
 
-PODFILE CHECKSUM: 33bb3fef6189abba4090fc5e0cc449e1a49f2fca
+PODFILE CHECKSUM: 2e7a9fd7c82c5aefda077f27875142d1bd81c920
 
 COCOAPODS: 1.1.1

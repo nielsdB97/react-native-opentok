@@ -19,6 +19,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/EstebanFuentealba/react-native-opentok.git", :tag => "#{s.version}" }
 
   s.source_files  = "*.{h,m}"
-
   s.dependency "OpenTok"
 end

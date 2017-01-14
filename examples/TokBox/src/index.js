@@ -32,15 +32,15 @@ class Basic extends Component {
     return (
       <View style={styles.container}>
         <SubscriberView
-          apiKey="45740142"
-          sessionId="1_MX40NTc0MDE0Mn5-MTQ4NDM1NjU4NzQwOX5TZnhMaWgvSjV3TUVHUGxBOFpzY0phN0x-UH4"
-          token="T1==cGFydG5lcl9pZD00NTc0MDE0MiZzaWc9NjkxNjcyMjExZjY1MDFjNzg0MWZjYjhkZjI3NmVlNTBhMWQxMWM2NzpzZXNzaW9uX2lkPTFfTVg0ME5UYzBNREUwTW41LU1UUTRORE0xTmpVNE56UXdPWDVUWm5oTWFXZ3ZTalYzVFVWSFVHeEJPRnB6WTBwaE4weC1VSDQmY3JlYXRlX3RpbWU9MTQ4NDM1NjU4NyZub25jZT01NDMzNDUmcm9sZT1QVUJMSVNIRVI="
+          apiKey={config.OPENTOK_API_KEY}
+          sessionId={config.SESSION_ID}
+          token={config.SUBSCRIBER_TOKEN || config.PUBLISHER_TOKEN}
           style={{ width: 300, height: 200 }}
         />
         <PublisherView
-          apiKey="45740142"
-          sessionId="1_MX40NTc0MDE0Mn5-MTQ4NDM1NjU4NzQwOX5TZnhMaWgvSjV3TUVHUGxBOFpzY0phN0x-UH4"
-          token="T1==cGFydG5lcl9pZD00NTc0MDE0MiZzaWc9NjkxNjcyMjExZjY1MDFjNzg0MWZjYjhkZjI3NmVlNTBhMWQxMWM2NzpzZXNzaW9uX2lkPTFfTVg0ME5UYzBNREUwTW41LU1UUTRORE0xTmpVNE56UXdPWDVUWm5oTWFXZ3ZTalYzVFVWSFVHeEJPRnB6WTBwaE4weC1VSDQmY3JlYXRlX3RpbWU9MTQ4NDM1NjU4NyZub25jZT01NDMzNDUmcm9sZT1QVUJMSVNIRVI="
+          apiKey={config.OPENTOK_API_KEY}
+          sessionId={config.SESSION_ID}
+          token={config.PUBLISHER_TOKEN || config.SUBSCRIBER_TOKEN}
           style={{ width: 300, height: 200 }}
         />
       </View>
@@ -57,4 +57,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('Basic', () => Basic);
+AppRegistry.registerComponent('TokBox', () => Basic);

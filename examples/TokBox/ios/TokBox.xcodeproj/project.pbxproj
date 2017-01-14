@@ -25,8 +25,7 @@
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		B533727ECFA3B7941B69E5DE /* libPods-TokBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE66508F54022EF55910C7ED /* libPods-TokBox.a */; };
-		D0807D181E29D52200A0F28B /* libRCTOpenTok.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0807D081E29D51500A0F28B /* libRCTOpenTok.a */; };
-		D0807D481E29D6BA00A0F28B /* libreact-native-opentok.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0807D2D1E29D69200A0F28B /* libreact-native-opentok.a */; };
+		D07D577B1E29F52A00E4BA59 /* libreact-native-opentok.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D07D57611E29F52200E4BA59 /* libreact-native-opentok.a */; };
 		D0807D491E29D92E00A0F28B /* libcxxreact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA91DF850E9000B6D8A /* libcxxreact.a */; };
 		D0807D4B1E29D94500A0F28B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0807D4A1E29D94500A0F28B /* UIKit.framework */; };
 		D0807D4C1E29D95D00A0F28B /* libyoga.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA51DF850E9000B6D8A /* libyoga.a */; };
@@ -216,25 +215,25 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
-		D0807D071E29D51500A0F28B /* PBXContainerItemProxy */ = {
+		D07D575C1E29F52200E4BA59 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D0807CF91E29D51500A0F28B /* RCTOpenTok.xcodeproj */;
+			containerPortal = D07D57561E29F52100E4BA59 /* Pods.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = AD8A56611D3FAF1400683126;
-			remoteInfo = RCTOpenTok;
-		};
-		D0807D2A1E29D69200A0F28B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0807D251E29D69200A0F28B /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B0477D660E4A3C051CCBABF0062682A8;
+			remoteGlobalIDString = 5DAB19A9DF1D4B25909185DF7A7EE562;
 			remoteInfo = "Pods-TokBox";
 		};
-		D0807D2C1E29D69200A0F28B /* PBXContainerItemProxy */ = {
+		D07D575E1E29F52200E4BA59 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D0807D251E29D69200A0F28B /* Pods.xcodeproj */;
+			containerPortal = D07D57561E29F52100E4BA59 /* Pods.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = D8DDEE9B6E89E6380986DC6AB081B58B;
+			remoteGlobalIDString = AD61ECD64BA46E460D6C411E9058D61A;
+			remoteInfo = React;
+		};
+		D07D57601E29F52200E4BA59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D07D57561E29F52100E4BA59 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A1B2988267C31518EE97DB151FEC2E23;
 			remoteInfo = "react-native-opentok";
 		};
 /* End PBXContainerItemProxy section */
@@ -264,8 +263,7 @@
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		99995B5EDC3802B9F693A7EB /* Pods-TokBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TokBox.release.xcconfig"; path = "Pods/Target Support Files/Pods-TokBox/Pods-TokBox.release.xcconfig"; sourceTree = "<group>"; };
 		BE66508F54022EF55910C7ED /* libPods-TokBox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TokBox.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0807CF91E29D51500A0F28B /* RCTOpenTok.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTOpenTok.xcodeproj; path = ../../../RCTOpenTok.xcodeproj; sourceTree = "<group>"; };
-		D0807D251E29D69200A0F28B /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		D07D57561E29F52100E4BA59 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		D0807D4A1E29D94500A0F28B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FDED7DA82899CC959F7928BC /* Pods-TokBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TokBox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TokBox/Pods-TokBox.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -283,12 +281,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D07D577B1E29F52A00E4BA59 /* libreact-native-opentok.a in Frameworks */,
 				D0807D4D1E29D96B00A0F28B /* libjschelpers.a in Frameworks */,
 				D0807D4C1E29D95D00A0F28B /* libyoga.a in Frameworks */,
 				D0807D4B1E29D94500A0F28B /* UIKit.framework in Frameworks */,
 				D0807D491E29D92E00A0F28B /* libcxxreact.a in Frameworks */,
-				D0807D481E29D6BA00A0F28B /* libreact-native-opentok.a in Frameworks */,
-				D0807D181E29D52200A0F28B /* libRCTOpenTok.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
@@ -452,8 +449,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				D0807D251E29D69200A0F28B /* Pods.xcodeproj */,
-				D0807CF91E29D51500A0F28B /* RCTOpenTok.xcodeproj */,
+				D07D57561E29F52100E4BA59 /* Pods.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -501,19 +497,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D0807CFA1E29D51500A0F28B /* Products */ = {
+		D07D57571E29F52100E4BA59 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D0807D081E29D51500A0F28B /* libRCTOpenTok.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D0807D261E29D69200A0F28B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D0807D2B1E29D69200A0F28B /* libPods-TokBox.a */,
-				D0807D2D1E29D69200A0F28B /* libreact-native-opentok.a */,
+				D07D575D1E29F52200E4BA59 /* libPods-TokBox.a */,
+				D07D575F1E29F52200E4BA59 /* libReact.a */,
+				D07D57611E29F52200E4BA59 /* libreact-native-opentok.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -588,8 +577,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = D0807D261E29D69200A0F28B /* Products */;
-					ProjectRef = D0807D251E29D69200A0F28B /* Pods.xcodeproj */;
+					ProductGroup = D07D57571E29F52100E4BA59 /* Products */;
+					ProjectRef = D07D57561E29F52100E4BA59 /* Pods.xcodeproj */;
 				},
 				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
@@ -614,10 +603,6 @@
 				{
 					ProductGroup = 00C302D41ABCB9D200DB3ED1 /* Products */;
 					ProjectRef = 00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */;
-				},
-				{
-					ProductGroup = D0807CFA1E29D51500A0F28B /* Products */;
-					ProjectRef = D0807CF91E29D51500A0F28B /* RCTOpenTok.xcodeproj */;
 				},
 				{
 					ProductGroup = 139105B71AF99BAD00B5F7CC /* Products */;
@@ -824,25 +809,25 @@
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D0807D081E29D51500A0F28B /* libRCTOpenTok.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libRCTOpenTok.a;
-			remoteRef = D0807D071E29D51500A0F28B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D0807D2B1E29D69200A0F28B /* libPods-TokBox.a */ = {
+		D07D575D1E29F52200E4BA59 /* libPods-TokBox.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libPods-TokBox.a";
-			remoteRef = D0807D2A1E29D69200A0F28B /* PBXContainerItemProxy */;
+			remoteRef = D07D575C1E29F52200E4BA59 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D0807D2D1E29D69200A0F28B /* libreact-native-opentok.a */ = {
+		D07D575F1E29F52200E4BA59 /* libReact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReact.a;
+			remoteRef = D07D575E1E29F52200E4BA59 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D07D57611E29F52200E4BA59 /* libreact-native-opentok.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libreact-native-opentok.a";
-			remoteRef = D0807D2C1E29D69200A0F28B /* PBXContainerItemProxy */;
+			remoteRef = D07D57601E29F52200E4BA59 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
