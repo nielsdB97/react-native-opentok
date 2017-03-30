@@ -109,7 +109,7 @@
  * Called when stream is destroyed
  */
 - (void)session:(OTSession*)session streamDestroyed:(OTStream*)stream {
-    _onSubscribeStop(@{});
+    // _onSubscribeStop(@{});
 }
 
 /**
