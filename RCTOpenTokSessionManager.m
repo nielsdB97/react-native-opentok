@@ -46,11 +46,17 @@ RCT_EXPORT_METHOD(sendMessage:(NSString *)message)
 
 # pragma mark - OTSession delegate callbacks
 
-- (void)sessionDidConnect:(OTSession*)session {}
-- (void)sessionDidDisconnect:(OTSession*)session {}
+- (void)sessionDidConnect:(OTSession*)session {
+    [self onSessionConnect];
+}
+- (void)sessionDidDisconnect:(OTSession*)session {
+    [self onSessionDisconnect];
+}
 - (void)session:(OTSession*)session streamCreated:(OTStream *)stream {}
 - (void)session:(OTSession*)session streamDestroyed:(OTStream *)stream {}
-- (void)session:(OTSession*)session didFailWithError:(OTError*)error {}
+- (void)session:(OTSession*)session didFailWithError:(OTError*)error {
+        [self onConnectionFailed];
+}
 
 - (void)session:(OTSession*)session receivedSignalType:(NSString*)type fromConnection:(OTConnection*)connection withString:(NSString*)string {
     NSLog(@"Received signal %@", string);
@@ -65,5 +71,26 @@ RCT_EXPORT_METHOD(sendMessage:(NSString *)message)
       @"data": data,
     }];
 }
+- (void)onSessionConnect
+{
+  [self.bridge.eventDispatcher sendAppEventWithName:@"onSessionConnect"
+    body:@{
+    }];
+}
+
+- (void)onSessionDisconnect
+{
+  [self.bridge.eventDispatcher sendAppEventWithName:@"onSessionDisconnect"
+    body:@{
+    }];
+}
+
+- (void)onConnectionFailed
+{
+  [self.bridge.eventDispatcher sendAppEventWithName:@"onConnectionFailed"
+    body:@{
+    }];
+}
+
 
 @end
