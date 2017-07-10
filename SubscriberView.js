@@ -8,6 +8,7 @@
 
 import { requireNativeComponent, View } from 'react-native';
 import React from 'react';
+import PropTypes from 'prop-types';
 import SessionViewProps from './SessionViewProps';
 import withLoadingSpinner from './withLoadingSpinner';
 
@@ -30,15 +31,15 @@ class SubscriberView extends React.Component {
     /**
      * This function is called on subscribe start
      */
-    onSubscribeStart: React.PropTypes.func,
+    onSubscribeStart: PropTypes.func,
     /**
      * This function is called on subscribe error
      */
-    onSubscribeError: React.PropTypes.func,
+    onSubscribeError: PropTypes.func,
     /**
      * This function is called on subscribe stop
      */
-    onSubscribeStop: React.PropTypes.func,
+    onSubscribeStop: PropTypes.func,
   };
 
   static defaultProps = {
