@@ -6,7 +6,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { requireNativeComponent, View } from 'react-native';
+import { requireNativeComponent, View, ViewPropTypes } from 'react-native';
 import React from 'react';
 import PropTypes from 'prop-types';
 import SessionViewProps from './SessionViewProps';
@@ -26,7 +26,7 @@ const noop = () => {};
  */
 class PublisherView extends React.Component {
   static propTypes = {
-    ...View.propTypes,
+    ...ViewPropTypes,
     ...SessionViewProps,
     /**
      * This function is called on publish start
