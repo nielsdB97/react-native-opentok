@@ -11,12 +11,12 @@ Pod::Spec.new do |s|
     'Mike Chudziak' => 'mike.chudziak@callstack.io',
   }
 
-  s.homepage     = "https://github.com/callstack/react-native-video"
+  s.homepage     = "https://github.com/nielsdB97/react-native-opentok"
 
   s.license      = "MIT"
   s.platform     = :ios, "8.0"
 
-  s.source       = { :git => "https://github.com/EstebanFuentealba/react-native-opentok.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/nielsdB97/react-native-opentok.git", :tag => "#{s.version}" }
 
   s.source_files = "*.{h,m}"
   s.dependency     "OpenTok"
