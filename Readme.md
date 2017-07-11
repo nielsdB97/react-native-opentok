@@ -10,14 +10,19 @@ react-native-opentok
 
 ### iOS
 
-To install using Cocoapods, simply insert the following line into your `Podfile` and run `pod install`
+To install this package, you need Cocoapods.
+1. Install Cocoapods
+2. Install this package using `npm install`
+3. Insert the following line into your `Podfile`
 
-`pod 'react-native-opentok',  :path => '../node_modules/react-native-opentok'`
+  `pod 'react-native-opentok',  :path => '../node_modules/react-native-opentok'`
+4. Run `pod install`
+
 
 ### Android
 
 
-- In your `android/app/build.gradle` add:
+1. In your `android/app/build.gradle` add:
 ```groovy
 ...
 dependencies {
@@ -27,15 +32,14 @@ dependencies {
 }
 ```
 
-- In your `android/settings.gradle` add:
+2. In your `android/settings.gradle` add:
 ```groovy
 ...
 include ':react-native-opentok'
 project(':react-native-opentok').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-opentok/android')
 ```
 
-- In your application object, add:
-
+3. In your application object, add:
 ```java
 import io.callstack.react.opentok.MainPackage;
 ...
